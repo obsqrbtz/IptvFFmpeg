@@ -12,6 +12,7 @@ make install
 ## 2. Build app
 
 ```bash
+cd ../
 swift build
 ```
 
