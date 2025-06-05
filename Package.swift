@@ -14,6 +14,7 @@ let package = Package(
             path: "Sources/FFmpegWrapper",
             publicHeadersPath: ".",
             cSettings: [
+                .headerSearchPath("../../FFmpeg/build/include"),
                 .unsafeFlags(["-IFFmpeg/build/include"])
             ],
             linkerSettings: [
