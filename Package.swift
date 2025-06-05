@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "IptvFFmpeg",
-    platforms: [.macOS(.v13)], // or your target
+    platforms: [.macOS(.v15)],
     products: [
         .executable(name: "IptvFFmpeg", targets: ["IptvFFmpeg"]),
     ],
@@ -14,7 +14,6 @@ let package = Package(
             path: "Sources/FFmpegWrapper",
             publicHeadersPath: ".",
             cSettings: [
-                //.headerSearchPath("../../FFmpeg/build/include"),
                 .unsafeFlags(["-IFFmpeg/build/include"])
             ],
             linkerSettings: [
@@ -31,7 +30,17 @@ let package = Package(
         .executableTarget(
             name: "IptvFFmpeg",
             dependencies: ["FFmpegWrapper"],
-            path: "Sources/IptvFFmpeg"
+            path: "Sources/IptvFFmpeg",
+                linkerSettings: [
+                .unsafeFlags(["-LFFmpeg/build/lib"]),
+                .linkedFramework("AudioToolbox"),
+                .linkedFramework("VideoToolbox"),
+                .linkedFramework("CoreVideo"),
+                .linkedFramework("CoreMedia"),
+                .linkedLibrary("iconv"),
+                .linkedLibrary("bz2"),
+                .linkedLibrary("lzma")
+    ]
         )
     ]
 )
