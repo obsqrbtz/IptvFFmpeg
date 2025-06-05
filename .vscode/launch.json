@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:IptvFFmpeg}",
+            "name": "Debug IptvFFmpeg",
+            "program": "${workspaceFolder:IptvFFmpeg}/.build/debug/IptvFFmpeg",
+            "preLaunchTask": "swift: Build Debug IptvFFmpeg"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:IptvFFmpeg}",
+            "name": "Release IptvFFmpeg",
+            "program": "${workspaceFolder:IptvFFmpeg}/.build/release/IptvFFmpeg",
+            "preLaunchTask": "swift: Build Release IptvFFmpeg"
+        }
+    ]
+}
