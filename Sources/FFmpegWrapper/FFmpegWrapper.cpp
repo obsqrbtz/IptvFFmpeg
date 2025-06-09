@@ -1,4 +1,4 @@
-#include "FFmpegWrapper.h"
+#include "FFmpegWrapper.hpp"
 #include <libavformat/avformat.h>
 #include <libavcodec/avcodec.h>
 #include <libavutil/imgutils.h>

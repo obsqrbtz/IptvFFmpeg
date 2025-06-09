@@ -1,5 +1,5 @@
-#ifndef FFmpegWrapper_h
-#define FFmpegWrapper_h
+#ifndef FFmpegWrapper_hpp
+#define FFmpegWrapper_hpp
 
 #ifdef __cplusplus
 extern "C" {

@@ -3,9 +3,15 @@ import PackageDescription
 
 let package = Package(
     name: "IptvFFmpeg",
-    platforms: [.macOS(.v15)],
+    platforms: [.macOS(.v15), .iOS(.v18)],
     products: [
-        .executable(name: "IptvFFmpeg", targets: ["IptvFFmpeg"]),
+        .library(
+            name: "IptvFFmpeg", 
+            targets: ["IptvFFmpeg"]),
+        .library(
+            name: "FFmpegWrapper",
+            targets: ["FFmpegWrapper"]
+        ),
     ],
     targets: [
         .target(
@@ -13,9 +19,10 @@ let package = Package(
             dependencies: [],
             path: "Sources/FFmpegWrapper",
             publicHeadersPath: ".",
-            cSettings: [
+            cxxSettings: [
                 .headerSearchPath("../../FFmpeg/build/include"),
-                .unsafeFlags(["-IFFmpeg/build/include"])
+                .unsafeFlags(["-IFFmpeg/build/include"]),
+                .unsafeFlags(["-std=c++20"])
             ],
             linkerSettings: [
                 .unsafeFlags([
@@ -28,7 +35,7 @@ let package = Package(
                 ])
             ]
         ),
-        .executableTarget(
+        .target(
             name: "IptvFFmpeg",
             dependencies: ["FFmpegWrapper"],
             path: "Sources/IptvFFmpeg",
