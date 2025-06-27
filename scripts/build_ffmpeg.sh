@@ -42,7 +42,7 @@ build_target() {
 	    --sysroot="$(xcrun --sdk $SDK_NAME --show-sdk-path)" \
 	    --enable-cross-compile \
             --arch=$ARCH \
-            --prefix="$OUT_DIR/install" \
+            --prefix="$OUT_DIR" \
             --cc="xcrun --sdk $SDK_NAME clang -arch $ARCH" \
 	    --cxx="xcrun --sdk $SDK_NAME clang++ -arch $ARCH" \
             --extra-ldflags="$EXTRA_LDFLAGS" \
@@ -56,10 +56,11 @@ build_target() {
         EXTRA_LDFLAGS="-mmacosx-version-min=$MIN_VERSION"
 
         ./configure \
-            --prefix="$OUT_DIR/install" \
+            --prefix="$OUT_DIR" \
 	    --disable-doc \
 	    --enable-network \
 	    --enable-shared \
+	    --disable-static \
 	    --enable-cross-compile \
 	    --arch=$ARCH \
 	    --cc="clang -arch $ARCH" \
