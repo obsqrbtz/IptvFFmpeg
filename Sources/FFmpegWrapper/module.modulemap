@@ -1,4 +1,4 @@
 module FFmpegWrapper {
-    header "FFmpegWrapper.hpp"
+    header "FFmpegWrapper.h"
     export *
 }

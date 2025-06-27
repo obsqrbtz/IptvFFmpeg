@@ -1,0 +1,8 @@
+OTHER_CFLAGS = -I$(SRCROOT)/FFmpeg/build/include
+OTHER_LDFLAGS = \
+    $(SRCROOT)/FFmpeg/build/lib/libavformat.a \
+    $(SRCROOT)/FFmpeg/build/lib/libavcodec.a \
+    $(SRCROOT)/FFmpeg/build/lib/libavutil.a \
+    $(SRCROOT)/FFmpeg/build/lib/libswscale.a \
+    $(SRCROOT)/FFmpeg/build/lib/libswresample.a \
+    -lz -lm

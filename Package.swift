@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "IptvFFmpeg",
-    platforms: [.macOS(.v15), .iOS(.v18)],
+    platforms: [.macOS(.v15)],
     products: [
         .library(
             name: "IptvFFmpeg", 
@@ -19,10 +19,10 @@ let package = Package(
             dependencies: [],
             path: "Sources/FFmpegWrapper",
             publicHeadersPath: ".",
-            cxxSettings: [
+            cSettings: [
                 .headerSearchPath("../../FFmpeg/build/include"),
                 .unsafeFlags(["-IFFmpeg/build/include"]),
-                .unsafeFlags(["-std=c++20"])
+                //.unsafeFlags(["-std=c++20"])
             ],
             linkerSettings: [
                 .unsafeFlags([

@@ -1,0 +1,38 @@
+name: IptvFFmpeg
+options:
+  bundleIdPrefix: com.binarygoose.dev
+  deploymentTarget:
+    macOS: "15.0"
+
+targets:
+  FFmpegWrapper:
+    type: framework
+    platform: macOS
+    sources: [Sources/FFmpegWrapper]
+    settings:
+      base:
+        HEADER_SEARCH_PATHS: "$(SRCROOT)/FFmpeg/build/include"
+        OTHER_LDFLAGS: >-
+          $(SRCROOT)/FFmpeg/build/lib/libavformat.a
+          $(SRCROOT)/FFmpeg/build/lib/libavcodec.a
+          $(SRCROOT)/FFmpeg/build/lib/libavutil.a
+          $(SRCROOT)/FFmpeg/build/lib/libswscale.a
+          $(SRCROOT)/FFmpeg/build/lib/libswresample.a
+          -lz -lm
+        LIBRARY_SEARCH_PATHS: "$(SRCROOT)/FFmpeg/build/lib"
+
+  IptvFFmpeg_macOS:
+    type: application
+    platform: macOS
+    sources: [Sources/IptvFFmpeg]
+    dependencies:
+      - target: FFmpegWrapper
+    settings:
+      base:
+        PRODUCT_NAME: IptvFFmpeg
+        CODE_SIGN_IDENTITY: "-"
+        GENERATE_INFOPLIST_FILE: YES
+        HEADER_SEARCH_PATHS: "$(SRCROOT)/FFmpeg/build/include"
+        OTHER_LDFLAGS: >-
+          -lz -lm
+        LIBRARY_SEARCH_PATHS: "$(SRCROOT)/FFmpeg/build/lib"

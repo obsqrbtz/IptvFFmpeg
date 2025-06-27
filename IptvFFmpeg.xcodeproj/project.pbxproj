@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D09FCC5676A537AD96C3FE /* FFmpegWrapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 97C0A6B84C3FC91605331002 /* FFmpegWrapper.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		58BBA607FEE172ADA62C6B39 /* FFmpegWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D923F47683FFD462094C79A4 /* FFmpegWrapper.cpp */; };
+		805D158D8C9B22B5D7296DAB /* FFmpegWrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E337999E3E858758511729C8 /* FFmpegWrapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A24D12237E03DD8637FBC50 /* FFmpegWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E337999E3E858758511729C8 /* FFmpegWrapper.framework */; };
+		EE2E28890CA7201B57E51DA2 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D6002AECF148157138DDE9 /* Stream.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69C3B3F64D2822291957B650 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23DF2E4A724A9EB81BA422A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C35D7A3EB85E6C09BD6EE096;
+			remoteInfo = FFmpegWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4564B75DB6F59D7D40522F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				805D158D8C9B22B5D7296DAB /* FFmpegWrapper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		72C2AA9FDB8B90DAE5DEF1C0 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		97C0A6B84C3FC91605331002 /* FFmpegWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FFmpegWrapper.hpp; sourceTree = "<group>"; };
+		A4CED1963558D5D1281EAF85 /* IptvFFmpeg_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IptvFFmpeg_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D6002AECF148157138DDE9 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		D923F47683FFD462094C79A4 /* FFmpegWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FFmpegWrapper.cpp; sourceTree = "<group>"; };
+		E337999E3E858758511729C8 /* FFmpegWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFmpegWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBB2EC62851080FA491A941E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A24D12237E03DD8637FBC50 /* FFmpegWrapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DFF801C03326884020767B4 = {
+			isa = PBXGroup;
+			children = (
+				46E78A7F12CF3D0D316F4261 /* FFmpegWrapper */,
+				415027E35C98443CE3996ECD /* IptvFFmpeg */,
+				D6548D92114B5E9A38556C84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		415027E35C98443CE3996ECD /* IptvFFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6002AECF148157138DDE9 /* Stream.swift */,
+			);
+			name = IptvFFmpeg;
+			path = Sources/IptvFFmpeg;
+			sourceTree = "<group>";
+		};
+		46E78A7F12CF3D0D316F4261 /* FFmpegWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D923F47683FFD462094C79A4 /* FFmpegWrapper.cpp */,
+				97C0A6B84C3FC91605331002 /* FFmpegWrapper.hpp */,
+				72C2AA9FDB8B90DAE5DEF1C0 /* module.modulemap */,
+			);
+			name = FFmpegWrapper;
+			path = Sources/FFmpegWrapper;
+			sourceTree = "<group>";
+		};
+		D6548D92114B5E9A38556C84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E337999E3E858758511729C8 /* FFmpegWrapper.framework */,
+				A4CED1963558D5D1281EAF85 /* IptvFFmpeg_macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		39DB31C1EA13852958D2E46E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D09FCC5676A537AD96C3FE /* FFmpegWrapper.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C35D7A3EB85E6C09BD6EE096 /* FFmpegWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D0BF6A3F6F24B88F5F9A73B /* Build configuration list for PBXNativeTarget "FFmpegWrapper" */;
+			buildPhases = (
+				39DB31C1EA13852958D2E46E /* Headers */,
+				69854BE255111031C5FD471D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFmpegWrapper;
+			packageProductDependencies = (
+			);
+			productName = FFmpegWrapper;
+			productReference = E337999E3E858758511729C8 /* FFmpegWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D36F34A993FB9CEBBE98916E /* IptvFFmpeg_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5455FA288C7DB9C4ECAAEE5F /* Build configuration list for PBXNativeTarget "IptvFFmpeg_macOS" */;
+			buildPhases = (
+				6D8EBE0DB24C2474AB009400 /* Sources */,
+				FBB2EC62851080FA491A941E /* Frameworks */,
+				F4564B75DB6F59D7D40522F0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55F2D8DE98AF407C15AA7F3D /* PBXTargetDependency */,
+			);
+			name = IptvFFmpeg_macOS;
+			packageProductDependencies = (
+			);
+			productName = IptvFFmpeg_macOS;
+			productReference = A4CED1963558D5D1281EAF85 /* IptvFFmpeg_macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23DF2E4A724A9EB81BA422A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = D7D408CA9A3E8B33B4EC4740 /* Build configuration list for PBXProject "IptvFFmpeg" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1DFF801C03326884020767B4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C35D7A3EB85E6C09BD6EE096 /* FFmpegWrapper */,
+				D36F34A993FB9CEBBE98916E /* IptvFFmpeg_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69854BE255111031C5FD471D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BBA607FEE172ADA62C6B39 /* FFmpegWrapper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8EBE0DB24C2474AB009400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2E28890CA7201B57E51DA2 /* Stream.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55F2D8DE98AF407C15AA7F3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C35D7A3EB85E6C09BD6EE096 /* FFmpegWrapper */;
+			targetProxy = 69C3B3F64D2822291957B650 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0031AE2B5A1E075D2E01AF4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FFmpeg/build/include";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FFmpeg/build/lib";
+				OTHER_LDFLAGS = "$(SRCROOT)/FFmpeg/build/lib/libavformat.a $(SRCROOT)/FFmpeg/build/lib/libavcodec.a $(SRCROOT)/FFmpeg/build/lib/libavutil.a $(SRCROOT)/FFmpeg/build/lib/libswscale.a $(SRCROOT)/FFmpeg/build/lib/libswresample.a -lz -lm";
+				PRODUCT_BUNDLE_IDENTIFIER = com.binarygoose.dev.FFmpegWrapper;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		0D57D946A6ADDB1C55C808CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FFmpeg/build/include";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FFmpeg/build/lib";
+				OTHER_LDFLAGS = "-lz -lm";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.binarygoose.dev.IptvFFmpeg-macOS";
+				PRODUCT_NAME = IptvFFmpeg;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		873A18E88794C85AF2594686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8AC973CDEBF761AA60807B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FFmpeg/build/include";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FFmpeg/build/lib";
+				OTHER_LDFLAGS = "$(SRCROOT)/FFmpeg/build/lib/libavformat.a $(SRCROOT)/FFmpeg/build/lib/libavcodec.a $(SRCROOT)/FFmpeg/build/lib/libavutil.a $(SRCROOT)/FFmpeg/build/lib/libswscale.a $(SRCROOT)/FFmpeg/build/lib/libswresample.a -lz -lm";
+				PRODUCT_BUNDLE_IDENTIFIER = com.binarygoose.dev.FFmpegWrapper;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		D615431757612E7CF9180A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FC2B4654D399C83EE531CFB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FFmpeg/build/include";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FFmpeg/build/lib";
+				OTHER_LDFLAGS = "-lz -lm";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.binarygoose.dev.IptvFFmpeg-macOS";
+				PRODUCT_NAME = IptvFFmpeg;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D0BF6A3F6F24B88F5F9A73B /* Build configuration list for PBXNativeTarget "FFmpegWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AC973CDEBF761AA60807B4B /* Debug */,
+				0031AE2B5A1E075D2E01AF4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5455FA288C7DB9C4ECAAEE5F /* Build configuration list for PBXNativeTarget "IptvFFmpeg_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D57D946A6ADDB1C55C808CB /* Debug */,
+				FC2B4654D399C83EE531CFB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D7D408CA9A3E8B33B4EC4740 /* Build configuration list for PBXProject "IptvFFmpeg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D615431757612E7CF9180A3D /* Debug */,
+				873A18E88794C85AF2594686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23DF2E4A724A9EB81BA422A9 /* Project object */;
+}
